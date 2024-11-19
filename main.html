@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Mail Sender</h1>
+        <form id="emailForm">
+            <label for="email">Ihre E-Mail-Adresse:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="password">Ihr Passwort:</label>
+            <input type="password" id="password" required><br>
+
+            <label for="recipients">Empfänger E-Mail-Adressen (durch Komma getrennt):</label>
+            <input type="text" id="recipients" required><br>
+
+            <label for="subject">Betreff der E-Mail:</label>
+            <input type="text" id="subject" required><br>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" rows="5" required></textarea><br>
+
+            <label for="attachments">Anhänge (optional):</label>
+            <input type="file" id="attachments" multiple><br>
+
+            <button type="button" id="guideBtn">Anleitung zum App-Passwort</button><br><br>
+            <button type="submit">E-Mails senden</button>
+        </form>
+
+        <div id="guideModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Anleitung: App-Passwort erstellen</h2>
+                <pre>
+Um ein App-Passwort für deinen Google-Account zu erstellen, folge diesen Schritten:
+
+1. Melde dich bei deinem Google-Konto an: Gehe auf https://myaccount.google.com/
+2. Gehe zu den Sicherheits-Einstellungen
+3. App-Passwörter erstellen
+4. App-Passwort erstellen
+5. Passwort kopieren und verwenden
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
